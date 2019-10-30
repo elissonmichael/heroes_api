@@ -4,43 +4,73 @@ athletics:
   name: Athletics
   ability: strength
   character: elisson
+  proficient: true
 
 acrobatics:
   name: Acrobatics
-  ability: Dexterity
+  ability: dexterity
   character: elisson
 
 stealth:
   name: Stealth
-  ability: Dexterity
+  ability: dexterity
   character: elisson
 
 arcana:
   name: Arcana
-  ability: Intelligence
-  character: elisson
+  ability: intelligence
+  character: satya
+  proficient: true
 
 religion:
   name: Religion
-  ability: Intelligence
+  ability: intelligence
   character: satya
 
 history:
   name: History
-  ability: Intelligence
+  ability: intelligence
   character: satya
 
 investigation:
   name: Investigation
-  ability: Intelligence
-  character: satya
+  ability: intelligence
+  character: krishynan
+  proficient: true
 
 nature:
   name: Nature
-  ability: Intelligence
-  character: satya
+  ability: intelligence
+  character: krishynan
 
 persuasion:
   name: Persuasion
-  ability: Charisma
-  character: satya
+  ability: charisma
+  character: krishynan
+
+medicine:
+  name: Medicine
+  ability: wisdom
+  character: brandon
+  proficient: true
+
+perception:
+  name: Perception
+  ability: wisdom
+  character: brandon
+
+survival:
+  name: Survival
+  ability: wisdom
+  character: brandon
+
+intimidation:
+  name: Intimidation
+  ability: charisma
+  character: nyorai
+  proficient: true
+
+deception:
+  name: Deception
+  ability: charisma
+  character: nyorai
