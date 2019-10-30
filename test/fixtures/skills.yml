@@ -1,0 +1,46 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+athletics:
+  name: Athletics
+  ability: strength
+  character: elisson
+
+acrobatics:
+  name: Acrobatics
+  ability: Dexterity
+  character: elisson
+
+stealth:
+  name: Stealth
+  ability: Dexterity
+  character: elisson
+
+arcana:
+  name: Arcana
+  ability: Intelligence
+  character: elisson
+
+religion:
+  name: Religion
+  ability: Intelligence
+  character: satya
+
+history:
+  name: History
+  ability: Intelligence
+  character: satya
+
+investigation:
+  name: Investigation
+  ability: Intelligence
+  character: satya
+
+nature:
+  name: Nature
+  ability: Intelligence
+  character: satya
+
+persuasion:
+  name: Persuasion
+  ability: Charisma
+  character: satya

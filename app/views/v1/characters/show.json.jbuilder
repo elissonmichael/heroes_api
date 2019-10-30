@@ -1,1 +1,1 @@
-json.array! [@character], partial: 'v1/characters/character', as: :character
+json.partial! 'v1/characters/character', character: @character
