@@ -2,6 +2,7 @@ require 'test_helper'
 
 class CharacterTest < ActiveSupport::TestCase
   context 'validations' do
+    should have_many(:skills)
     should validate_presence_of(:name)
     %i[strength dexterity constitution intelligence wisdom charisma]
       .each do |ability|
