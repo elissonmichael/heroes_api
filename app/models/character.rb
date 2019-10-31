@@ -6,6 +6,20 @@ class Character < ApplicationRecord
                                        less_than_or_equal_to: 20 }
   has_many :skills
 
+  scope :character_name, ->(n) { where('name LIKE ?', "%#{n}%") if n.present? }
+  scope :dex_gt, ->(int) { where('dexterity > ?', int) if int.present? }
+  scope :dex_lt, ->(int) { where('dexterity < ?', int) if int.present? }
+  scope :str_gt, ->(int) { where('strength > ?', int) if int.present? }
+  scope :str_lt, ->(int) { where('strength < ?', int) if int.present? }
+  scope :con_gt, ->(int) { where('constitution > ?', int)  if int.present? }
+  scope :con_lt, ->(int) { where('constitution < ?', int)  if int.present? }
+  scope :int_gt, ->(int) { where('intelligence > ?', int)  if int.present? }
+  scope :int_lt, ->(int) { where('intelligence < ?', int)  if int.present? }
+  scope :wis_gt, ->(int) { where('wisdom > ?', int)  if int.present? }
+  scope :wis_lt, ->(int) { where('wisdom < ?', int)  if int.present? }
+  scope :cha_gt, ->(int) { where('charisma > ?', int)  if int.present? }
+  scope :cha_lt, ->(int) { where('charisma < ?', int)  if int.present? }
+
   def level
     abilities.sum / abilities.size
   end
