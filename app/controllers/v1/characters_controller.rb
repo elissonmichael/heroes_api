@@ -2,7 +2,7 @@ class V1::CharactersController < ApplicationController
   before_action :set_character, only: [:show, :update, :destroy]
 
   def index
-    @characters = Character.all
+    @characters = Character.includes(:skills)
   end
 
   def show; end

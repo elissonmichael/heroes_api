@@ -1,1 +1,1 @@
-json.extract! skill, :id, :name, :ability, :character
+json.extract! skill, :id, :name, :ability, :score, :proficient
