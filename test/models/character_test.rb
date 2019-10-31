@@ -3,12 +3,12 @@ require 'test_helper'
 class CharacterTest < ActiveSupport::TestCase
   context 'validations' do
     should validate_presence_of(:name)
-    [:strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma]
-    .each do |ability|
-       should validate_presence_of(ability)
-       should validate_numericality_of(ability).is_greater_than_or_equal_to(1)
-                                               .is_less_than_or_equal_to(20)
-    end
+    %i[strength dexterity constitution intelligence wisdom charisma]
+      .each do |ability|
+        should validate_presence_of(ability)
+        should validate_numericality_of(ability).is_greater_than_or_equal_to(1)
+                                                .is_less_than_or_equal_to(20)
+      end
   end
 
   test 'level is the average of abilities' do
