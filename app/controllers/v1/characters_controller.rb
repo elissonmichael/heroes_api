@@ -1,5 +1,5 @@
 class V1::CharactersController < ApplicationController
-  before_action :set_character, only: [:show, :update, :destroy]
+  before_action :set_character, only: %i[show update destroy]
 
   def index
     @characters = Character.includes(:skills)
@@ -10,8 +10,8 @@ class V1::CharactersController < ApplicationController
   def create
     @character = Character.new(character_params)
     if @character.save
-      render json: { character: @character},
-                     status: 201, location: v1_character_path(@character)
+      render json: { character: @character },
+             status: 201, location: v1_character_path(@character)
     else
       render json: { errors: @character.errors }, status: 422
     end
