@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191022195841) do
+ActiveRecord::Schema.define(version: 20191030034352) do
 
   create_table "characters", force: :cascade do |t|
     t.string "name"
@@ -20,6 +20,15 @@ ActiveRecord::Schema.define(version: 20191022195841) do
     t.integer "intelligence"
     t.integer "wisdom"
     t.integer "charisma"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "skills", force: :cascade do |t|
+    t.string "name"
+    t.string "ability"
+    t.integer "character_id"
+    t.boolean "proficient", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
