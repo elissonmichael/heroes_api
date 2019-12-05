@@ -14,7 +14,7 @@ class ListingCharactersTest < ActionDispatch::IntegrationTest
     get "/v1/characters/#{character.id}"
     assert response.success?
     character_response = json(response.body)
-    assert_equal character.name, character_response[:name]
+    assert_equal character.name, character_response.first[:name]
   end
 
   test 'return characters searched by name' do
