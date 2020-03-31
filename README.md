@@ -1,3 +1,5 @@
+![TEST](https://github.com/elissonmichael/heroes_api/workflows/TEST/badge.svg?branch=master)
+
 # Desenvolvimento de API para Web Service com Rails
 
 ## Endpoint Raiz (Root)
